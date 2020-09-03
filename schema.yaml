@@ -1,0 +1,33 @@
+type: "//rec"
+optional:
+  shared:
+    type: "//rec"
+    optional:
+      security:
+        type: "//rec"
+        optional:
+          joinKey: "//str"
+          joinKeyFile: "//str"
+          masterKeyFile: "//str"
+          bootstrapKeysReadTimeoutSecs: "//int"
+      logging:
+        type: "//rec"
+        optional:
+          enabled: "//bool"
+          maxSizeMb: "//int"
+          maxFiles: "//int"
+          compress: "//bool"
+      node:  
+        type: "//rec"
+        optional:
+          ip: "//str"
+          id: "//str"
+          primary: "//bool"
+          haEnabled: "//bool"
+      database:
+        type: "//rec"
+        optional:
+          type: "//str"
+          url: "//str"
+          username: "//str"
+          password: "//str" 
